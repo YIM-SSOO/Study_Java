@@ -28,6 +28,16 @@ public class ListExample {
 
         list.add("치킨");
         list.add("피자");
+        //리스트는 중복값을 허용한다.
+        list.add("치킨");
+
+        // 중복 값을 넣고 싶지 않아서 리스트에 어떤 값이 있는지 확인하고 싶다면
+        // 반복문을 사용할수도 있지만 contains()를 활용하면 더 쉽게 할 수 있다.
+        boolean containsChicken = list.contains("치킨");
+
+        System.out.println(containsChicken);
+
+        String food01 = list.get(0);
 
         // 이 List에서 요소를 제거하려면 remove()를 사용할 수 있다.
         // remove() 2가지 사용법
@@ -38,11 +48,12 @@ public class ListExample {
 
         // List의 값을 변경해주는 메서드 - set()
         // set(첫번째인자 요소의 번호, 두번째 인자 - "값")
-        list.set(1, "치킨");
+        // list.set(1, "치킨");
 
         //List에서 요소 하나만 가져다 쓰기 위해서 쓰는 메서드 - get()
-        // System.out.println(list);
-        System.out.println(list.get(0));
+        //System.out.println(list.get(0));
+        System.out.println(list);
+        //System.out.println(food01);
 
 
     }
