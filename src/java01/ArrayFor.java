@@ -1,0 +1,18 @@
+package java01;
+
+public class ArrayFor {
+
+    public static void main(String[] args) {
+
+        //배열 선언
+        String[] days ={"월", "화","수","목","금","토","일"};
+
+        //반복문 
+        // i가 days.length보다 작을때까지
+        for(int i = 0; i < days.length; i++)
+            //days의 i번째를 출력
+            System.out.println(days[i]);
+
+        // => 월, 화 .. 이 출력된다.
+    }
+}
