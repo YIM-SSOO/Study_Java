@@ -7,7 +7,9 @@ public class For {
         // for 문
         // for 구문 자체에 변수 초기화, 조건식,증감식이 한줄에 표현된다.
 
-        //합을 담을 변수
+        // 1. 1부터 100까지 더하기
+
+        // 합을 담을 변수
         /*int total = 0;
         for (int i = 1; i <= 100; i++) { // 변수 초기화; 조건식 - i가 100보다 작거나 같을때 까지; i++
 
@@ -17,11 +19,11 @@ public class For {
 
         }
         //for구문이 다 수행되고 나면 total 값을 출력
-        System.out.println(total); 결과 : 5050
+        System.out.println(total); 결과 - 5050
     }*/
 
 
-        // 1에서부터 100까지의 짝수만 출력하기
+        // 2. 1에서부터 100까지의 짝수만 출력하기
 
    /*     int total = 0;
         for (int i = 1; i <= 100; i++) { // 변수 초기화; 조건식 - i가 100보다 작거나 같을때 까지; i++
@@ -39,11 +41,10 @@ public class For {
 
         }
         //for구문이 다 수행되고 나면 total 값을 출력
-        System.out.println(total); // 결과 2550*/
+        System.out.println(total); // 결과 - 2550*/
 
 
-        // 짝수의 합이 아니라 50까지, 만약에 i가 50이였을때 나는 그만 수행하고 싶다면
-
+        // 3. 짝수의 합이 아니라 50까지, 만약에 i가 50이였을때 나는 그만 수행하고 싶다면
 
         int total = 0;
         for (int i = 1; i <= 100; i++) { // 변수 초기화; 조건식 - i가 100보다 작거나 같을때 까지; i++
@@ -66,7 +67,7 @@ public class For {
 
         }
         //for 구문이 다 수행되고 나면 total 값을 출력
-        System.out.println(total); // 결과 2550
+        System.out.println(total); // 결과 - 1275
 
 
     }
