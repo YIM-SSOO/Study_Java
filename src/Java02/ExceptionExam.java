@@ -17,6 +17,7 @@ public class ExceptionExam {
         } finally {
             System.out.println("오류가 발생하든 안하든 무조건 실행되는 블록입니다.");
         }
+        System.out.println("main End");
     }
 
 }
