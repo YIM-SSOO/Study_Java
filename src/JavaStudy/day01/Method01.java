@@ -5,7 +5,7 @@ public class Method01 {
         return 3.141592;
     }
 
-    public static void main(String[] args) {
+    public static void main(StringExam[] args) {
         System.out.println(getPI());
     }
 }

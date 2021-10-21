@@ -6,7 +6,7 @@ public class Method {
         return;
     }
 
-    public static void main(String[] args) {
+    public static void main(StringExam[] args) {
         int value = 2;
         printDouble(value);
         printDouble(3);
