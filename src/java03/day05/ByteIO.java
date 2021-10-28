@@ -5,11 +5,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ByteIO {
+    //Byte 단위 입출력
     public static void main(String[] args) {
-        FileInputStream fis = null;
-        FileOutputStream fos = null;
+        FileInputStream fis = null;  // 파일을 읽기위한 객체
+        FileOutputStream fos = null; // 파일을 쓰기위한 객체
         try {
-            fis = new FileInputStream("src/javaIO/exam/ByteExam1.java");
+            fis = new FileInputStream("src/java03/day05/ByteIO.java");
             fos = new FileOutputStream("byte.txt");
 
             int readData = -1;
@@ -17,19 +18,16 @@ public class ByteIO {
                 fos.write(readData);
             }
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             try {
                 fos.close();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
                 fis.close();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
