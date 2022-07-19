@@ -15,13 +15,13 @@ public class ByteIO {
 
         try{
             fis =  new FileInputStream("src/JavaStudy/day0719/ByteIO.java");
-            fos = new FileOutputStream("byte.txt");
+            fos = new FileOutputStream("bytes.txt");
 
             int readCount = -1;
             byte[] buffer = new byte[512];
 
             while((readCount = fis.read(buffer)) != -1){
-                fos.write(buffer, 0, readCount);
+                fos.write(buffer, 0, readCount); // readCount만큼 쓰기
             }
 
         }catch(Exception e){
